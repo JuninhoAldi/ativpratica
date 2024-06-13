@@ -70,3 +70,25 @@ function removerDoCarrinho(nome) {
     salvarCarrinho();
     carregarCarrinho();
 }
+
+function checkout(botao){
+    const input =document.getElementById("inputs");
+    input.innerHTML = "<input type='text' placeholder='Nome'> " +
+    "<input type='text' placeholder='Endereço'> " +
+    "<input type='text' placeholder='Telefone'>";
+
+    const pagamento = document.getElementById("pagamento");
+    pagamento.innerHTML = "<label>Forma de Pagamento:</label><br>" +
+    "<input type='radio' name='forma_pagamento' value='cartao'> Cartão<br>" +
+    "<input type='radio' name='forma_pagamento' value='pix'> Pix";
+
+    botao.style.display = "none";
+    
+    const finalizarCompra = document.getElementById("finalizar");
+    finalizarCompra.innerHTML = "<button onclick='finalizarCompraAlerta()'>Finalizar Compra</button>";
+}
+
+function finalizarCompraAlerta(){
+        window.confirm("Você deseja confirmar a Compra?");
+        window.alert("Obrigado pela Compra!")
+}
