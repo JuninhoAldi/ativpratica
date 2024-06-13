@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+}
+
+.cabeçalho{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    border: 1px solid;
+    padding-left: 10px;
+    padding: 10px;
+    padding-right: 10px;
+    width: 1310px;
+    border-radius: 10px;
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+#loja {
+    margin-left: auto; 
+    width: 80px;
+    height: 40px;
+  }
+
+.criarItens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 1310px;
+}
+
+input{
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: rgb(0, 185, 0);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+}
