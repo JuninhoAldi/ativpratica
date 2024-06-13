@@ -65,12 +65,10 @@ button:hover{
     background-color: #009879;
 }
 
-/* Container da tabela */
 .tabela {
     margin-top: 20px;
 }
 
-/* Estilização da tabela */
 .tabelaProdutos {
     width: 1310px;
     border-collapse: collapse;
