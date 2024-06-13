@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lojinha</title>
+    <title>Lojinha Virtual</title>
+    <link rel="stylesheet" href="styleLoja.css">
 </head>
 <body>
-    <div class="container">
+    <div class="cabeçalho">
         <h1>Lojinha Virtual</h1>
-        
     </div>
-    
+    <div class="catalogo">
+        <table class="tabelaProdutos">
+            <thead>
+                <tr>
+                    <th>Nome:</th>
+                    <th>Descrição:</th> 
+                    <th>Preço:</th>
+                    <th>Ações:</th>
+                </tr>
+            </thead>
+            <tbody id="catalogoProdutos">
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <table class="tabelaCarrinho">
+            <thead>
+                <tr>
+                    <th>Nome:</th>
+                    <th>Preço:</th>
+                    <th>Quantidade:</th>
+                    <th>Ações:</th>
+                </tr>
+            </thead>
+            <tbody id="carrinhoProdutos">
+               
+            </tbody>
+        </table>
+        <div class="total">
+            <h3>Total: R$ <span id="totalCarrinho">0.00</span></h3>
+        </div>
+    </div>
+    <script src="scriptLoja.js"></script>
 </body>
 </html>
